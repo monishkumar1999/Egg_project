@@ -1,16 +1,16 @@
 // index.js
 const express = require("express");
 const connectDB = require("./db/connectDB"); // Import the MongoDB connection logic
-
+const adminRouter = require("./router/admin");
 const app = express();
-
-// Middleware to parse JSON
 app.use(express.json());
+const cookieParser = require("cookie-parser");
 
-// Basic route
-app.get("/", (req, res) => {
-  res.send("Hello, Express with MongoDB!");
-});
+app.use("/admin",adminRouter);
+
+
+
+
 
 // Set the port from .env or default to 3000
 const port = process.env.PORT || 3000;
