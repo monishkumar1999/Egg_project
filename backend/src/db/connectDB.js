@@ -1,6 +1,7 @@
-// db.js
+
 const mongoose = require('mongoose');
 require('dotenv').config();  // Load environment variables from .env file
+
 
 const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/mydatabase";  // Default to local MongoDB URI
 
