@@ -21,6 +21,9 @@ const adminSchema = new mongoose.Schema({
   subscriptionDate: {
     type: Date, // Added type Date for subscription date
   },
+  subscriptionEndDate: {
+    type: Date, // Added type Date for subscription date
+  },
   subscriptionAmount: {
     type: Number, // Added type Number for subscription amount
   },
