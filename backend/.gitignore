@@ -1,0 +1,52 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Logs
+logs
+*.log
+logs/
+*.out
+*.pid
+*.seed
+*.csv
+*.sqlite
+*.sqlite3
+debug.log
+error.log
+server.log
+
+# Environmental variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Cache
+.cache/
+.npm/
+.pnpm-debug.log*
+.dsb
+dist/
+build/
+coverage/
+
+# Editor/OS Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Git files
+.git/
+.gitignore
+
+# Debugging & Dependencies
+.eslintcache
+.nyc_output/
