@@ -4,7 +4,7 @@ const { jwt_secerat } = require("../utils/constant");
 
 const checkAdminMobile = async (mobileNumber) => {
   const admin = await Admin.findOne({ mobile_no: mobileNumber });
-
+// s
   try {
 
     if (admin) {
