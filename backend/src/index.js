@@ -3,9 +3,11 @@ const express = require("express");
 const connectDB = require("./db/connectDB"); // Import the MongoDB connection logic
 const adminRouter = require("./router/admin");
 const app = express();
-app.use(express.json());
+
 const cookieParser = require("cookie-parser");
 
+app.use(express.json());
+app.use(cookieParser());
 app.use("/admin",adminRouter);
 
 
