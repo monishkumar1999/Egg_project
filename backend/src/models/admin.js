@@ -24,6 +24,9 @@ const adminSchema = new mongoose.Schema({
   subscriptionEndDate: {
     type: Date, // Added type Date for subscription date
   },
+  otp:{
+  type:Number,
+  },
   subscriptionAmount: {
     type: Number, // Added type Number for subscription amount
   },
@@ -37,6 +40,9 @@ const adminSchema = new mongoose.Schema({
     enum: [0, 1], // Subscription can either be 0 or 1 (inactive or active)
     default: 0, // Default value is 0 (inactive)
   },
+  otpExpiry: {
+  type:Date,
+  }
 }, { timestamps: true }); // Add timestamps to auto-create createdAt and updatedAt fields
 
 // Create and export the Admin model
